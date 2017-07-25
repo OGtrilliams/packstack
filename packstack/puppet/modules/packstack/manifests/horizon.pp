@@ -36,6 +36,7 @@ class packstack::horizon ()
       neutron_options       => {
         'enable_firewall' => hiera('CONFIG_HORIZON_NEUTRON_FW'),
         'enable_vpn'      => hiera('CONFIG_HORIZON_NEUTRON_VPN'),
+        'enable_lbaas'     => hiera('CONFIG_HORIZON_NEUTRON_LBAAS'),
       },
     }
 
